@@ -6,16 +6,16 @@ import {TittleComponent} from '@shared/tittle/tittle.component';
   standalone: true,
   imports: [CommonModule, TittleComponent],
   template: `
-  <app-tittle title="View transition 2"/>
-  <section class="flex justify-end">
+  <app-tittle title="View transition 1"/>
+  <section class="flex justify-start">
     <img srcset="https://picsum.photos/id/237/200/300" alt="Picsum" width="200" height="300" style="view-transition-name: hero1">
-    <div class="fixed bottom-16 right-10 bg-blue-800 w-32 h-32 rounded" style="view-transition-name: hero2">
+    <div class="bg-blue-500 w-56 h-56" style="view-transition-name: hero2">
 
     </div>
 
   </section>
   `,
 })
-export default class ViewTransitionComponent {
+export default class ViewTransition1Component {
 
 }

@@ -1,0 +1,25 @@
+<app-tittle title="defer view / blocks"/>
+<section class="grid grid-cols-1">
+  @defer () {
+    <app-heavy-loaders-slow cssClass="bg-blue-500"/>
+  } @placeholder (){
+    <div class="absolute right-1/2 bottom-1/2  transform translate-x-1/2 translate-y-1/2 ">
+      <div class="border-t-transparent border-solid animate-spin  rounded-full border-blue-400 border-8 h-60 w-60"></div>
+    </div>
+  }
+  @defer (on idle) {
+    <app-heavy-loaders-slow cssClass="bg-green-500"/>
+  } @placeholder (){
+    <div class="absolute right-1/2 bottom-1/2  transform translate-x-1/2 translate-y-1/2 ">
+      <div class="border-t-transparent border-solid animate-spin  rounded-full border-blue-400 border-8 h-60 w-60"></div>
+    </div>
+  }
+  @defer (on viewport) {
+    <app-heavy-loaders-slow cssClass="bg-purple-500"/>
+  } @placeholder () {
+    <div class="absolute right-1/2 bottom-1/2  transform translate-x-1/2 translate-y-1/2 ">
+      <div
+        class="border-t-transparent border-solid animate-spin  rounded-full border-blue-400 border-8 h-60 w-60"></div>
+    </div>
+  }
+</section>
