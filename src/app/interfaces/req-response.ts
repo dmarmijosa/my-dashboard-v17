@@ -19,3 +19,10 @@ export interface Support {
   url:  string;
   text: string;
 }
+
+export interface UserResponse {
+  data:    User;
+  support: Support;
+}
+
+
